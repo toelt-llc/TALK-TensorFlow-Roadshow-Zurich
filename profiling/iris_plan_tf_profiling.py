@@ -8,7 +8,7 @@ import time
 
 
 # Measuring timing
-start = time.time()
+
 
 train_ds_url = "http://download.tensorflow.org/data/iris_training.csv"
 test_ds_url = "http://download.tensorflow.org/data/iris_test.csv"
@@ -51,6 +51,7 @@ model.compile(loss='categorical_crossentropy',
               optimizer='sgd',
               metrics=['accuracy'])
 
+start = time.time()
 model.fit(train_plantfeatures, y_categorical, steps_per_epoch=32, epochs=100,
         verbose=0)
 
@@ -68,6 +69,12 @@ print("accuracy: %f"%   (accuracy))
 
 print("Now saving h5 version of this model")
 model.save('iris_model.h5')
+
+start = time.time()
+mode.predict(test_plantfeatures[0])
+end = time.time()
+print("Time needed was ", end - start, "seconds")
+
 
 tflite_converter = tf.lite.TFLiteConverter.from_keras_model(model)
 tflite_model = tflite_converter.convert()
