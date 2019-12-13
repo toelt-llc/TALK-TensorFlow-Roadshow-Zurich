@@ -68,7 +68,7 @@ print("loss:%f"% (loss))
 print("accuracy: %f"%   (accuracy))
 
 print("Now saving h5 version of this model")
-model.save('iris_model.h5')
+#model.save('iris_model.h5')
 
 start = time.time()
 mode.predict(test_plantfeatures[0])
