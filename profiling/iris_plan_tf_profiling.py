@@ -1,6 +1,7 @@
 import pandas as pd
 import numpy as np
 import tensorflow as tf
+import tensorflow.lite as tflite
 import time
 
 import warnings
@@ -65,3 +66,10 @@ print("Time needed was ", end - start, "seconds")
 print("Evaluating the model on the test data...")
 print("loss:%f"% (loss))
 print("accuracy: %f"%   (accuracy))
+
+print("Now saving h5 version of this model")
+model.save('iris_model.h5')
+
+tflite_converter = tf.lite.TFLiteConverter.from_keras_model(model)
+tflite_model = tflite_converter.convert()
+open("tf_lite_model.tflite", "wb").write(tflite_model)
