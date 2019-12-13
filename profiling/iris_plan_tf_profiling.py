@@ -47,20 +47,21 @@ model = tf.keras.Sequential([
 
 #print(model.summary())
 
+print("Compiling")
 model.compile(loss='categorical_crossentropy',
               optimizer='sgd',
               metrics=['accuracy'])
 
+print("Fitting")
 start = time.time()
-model.fit(train_plantfeatures, y_categorical, steps_per_epoch=32, epochs=100,
-        verbose=0)
-
+model.fit(train_plantfeatures, y_categorical, epochs=100, batch_size = 32, verbose=0)
+end = time.time()
+print("Fitting time needed was ", end - start, "seconds")
 
 #eval model
-loss, accuracy = model.evaluate(test_plantfeatures, y_categorical_test, steps=32)
+loss, accuracy = model.evaluate(test_plantfeatures, y_categorical_test)
 
-end = time.time()
-print("Time needed was ", end - start, "seconds")
+
 
 
 print("Evaluating the model on the test data...")
@@ -70,12 +71,18 @@ print("accuracy: %f"%   (accuracy))
 print("Now saving h5 version of this model")
 #model.save('iris_model.h5')
 
+
+# Time profiling for predict()
+input_data = np.array(test_plantfeatures, np.float32)
+input_data_0 = input_data[0].reshape(1,4)
 start = time.time()
-model.predict(test_plantfeatures[0])
+for i in range(1000):
+    model.predict(input_data_0)
 end = time.time()
-print("Time needed was ", end - start, "seconds")
+print("Inference time needed was ", end - start, "seconds")
 
 
+print("Converting to TFLite...")
 tflite_converter = tf.lite.TFLiteConverter.from_keras_model(model)
 tflite_model = tflite_converter.convert()
 open("tf_lite_model.tflite", "wb").write(tflite_model)
