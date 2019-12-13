@@ -53,16 +53,28 @@ input_data_0 = input_data[0].reshape(1,4)
 
 interpreter.set_tensor(input_details[0]['index'], input_data_0)
 
+
+ntimes = 1000
+
+
 # Measuring timing
 start = time.time()
-
-for i in range(1000000):
+for i in range(ntimes):
     interpreter.invoke()
-
 end = time.time()
-print("Time needed was ", end - start, "seconds")
+print("TFLite time needed was ", end - start, "seconds")
 
 # The function `get_tensor()` returns a copy of the tensor data.
 # Use `tensor()` in order to get a pointer to the tensor.
 output_data = interpreter.get_tensor(output_details[0]['index'])
 print(output_data)
+
+model1 = tf.keras.models.load_model("iris_model.h5")
+
+start = time.time()
+for i in range(ntimes):
+    output = model1.predict(input_data_0)
+end = time.time()
+print("Keras time needed was ", end - start, "seconds")
+
+print(output)
