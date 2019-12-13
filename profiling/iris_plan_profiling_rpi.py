@@ -69,12 +69,12 @@ print("TFLite time needed was ", end - start, "seconds")
 output_data = interpreter.get_tensor(output_details[0]['index'])
 print(output_data)
 
-model1 = tf.keras.models.load_model("iris_model.h5")
+#model1 = tf.keras.models.load_model("iris_model.h5")
+#
+#start = time.time()
+#for i in range(ntimes):
+#    output = model1.predict(input_data_0)
+#end = time.time()
+#print("Keras time needed was ", end - start, "seconds")
 
-start = time.time()
-for i in range(ntimes):
-    output = model1.predict(input_data_0)
-end = time.time()
-print("Keras time needed was ", end - start, "seconds")
-
-print(output)
+#print(output)
