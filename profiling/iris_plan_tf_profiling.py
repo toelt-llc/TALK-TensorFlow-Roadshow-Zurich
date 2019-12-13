@@ -71,7 +71,7 @@ print("Now saving h5 version of this model")
 #model.save('iris_model.h5')
 
 start = time.time()
-mode.predict(test_plantfeatures[0])
+model.predict(test_plantfeatures[0])
 end = time.time()
 print("Time needed was ", end - start, "seconds")
 
