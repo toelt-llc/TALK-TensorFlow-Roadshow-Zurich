@@ -3,8 +3,7 @@ import tensorflow as tf
 import pandas as pd
 import time
 
-# Measuring timing
-start = time.time()
+
 
 train_ds_url = "http://download.tensorflow.org/data/iris_training.csv"
 test_ds_url = "http://download.tensorflow.org/data/iris_test.csv"
@@ -54,8 +53,11 @@ input_data_0 = input_data[0].reshape(1,4)
 
 interpreter.set_tensor(input_details[0]['index'], input_data_0)
 
-interpreter.invoke()
+# Measuring timing
+start = time.time()
 
+for i in range(1000000):
+    interpreter.invoke()
 
 end = time.time()
 print("Time needed was ", end - start, "seconds")
