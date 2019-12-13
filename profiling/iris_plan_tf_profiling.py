@@ -4,8 +4,7 @@ import tensorflow as tf
 import tensorflow.lite as tflite
 import time
 
-import warnings
-warnings.simplefilter(action='ignore', category=FutureWarning)
+
 
 
 # Measuring timing
