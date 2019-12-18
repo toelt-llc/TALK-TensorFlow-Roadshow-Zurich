@@ -31,3 +31,5 @@ cache memory (very fast memory for quickly getting data) faster buses, etc.
 
 
 [1] https://blog.ml6.eu/googles-edge-tpu-what-how-why-945b32413cde
+
+[>> (Next) Section 2.2](2-2-GPU.md)

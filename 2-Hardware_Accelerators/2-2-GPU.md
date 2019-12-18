@@ -14,3 +14,5 @@ In short, a [GPU](https://en.wikipedia.org/wiki/Graphics_processing_units) drast
 [1] [https://blog.ml6.eu/googles-edge-tpu-what-how-why-945b32413cde](https://blog.ml6.eu/googles-edge-tpu-what-how-why-945b32413cde)
 
 [2] [https://en.wikipedia.org/wiki/Graphics_processing_unit](https://en.wikipedia.org/wiki/Graphics_processing_unit)
+
+[<< (Previous) Section 2.1](2-1-CPU.md) | [>> (Next) Section 2.3](2-3-TPU.md)

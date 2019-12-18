@@ -87,3 +87,5 @@ result.
 December 2019 11:03 AM
 
 [2] https://blog.ml6.eu/googles-edge-tpu-what-how-why-945b32413cde
+
+[<< (Previous) Section 2.2](2-2-GPU.md)
