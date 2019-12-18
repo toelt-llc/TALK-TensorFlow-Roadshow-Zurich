@@ -8,4 +8,4 @@
 
 [2.3 How a Tensor Processing Unit (TPU) is working - some notes](2-3-TPU.md)
 
-[ (Up) Table of Contents](../)
+[ (Up) Table of Contents](https://github.com/michelucci/Edge-computing-with-TensorFlow)
