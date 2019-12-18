@@ -35,7 +35,7 @@ including data exchange, happens between the DPUs. In the following series
 of Figures [1] you can see how each DPUs multiply and then add the results until
 we have performed a complete matrix multiplication.
 
-![](systolic-1.png)
+![](images/systolic-1.png)
 
 **Figure 2.3.1:** At the beginning the data is ready to be loaded in the
 DPUs. Note how the data gets to the DPUs in a specific temporal order.
@@ -45,40 +45,40 @@ DPUs. Note how the data gets to the DPUs in a specific temporal order.
 **Figure 2.3.2:** The first two values get digested by the upper left DPU.
 `a[0,0]` and `b[0,0]` and get multiplied and saved in the DPU.
 
-![](systolic-3.png)
+![](images/systolic-3.png)
 
 **Figure 2.3.3:** The data continue to flow horizontally and vertically.
 You can see how, for example, `a[0,0]` flows to the next DPU that then will
 use it with the next input from above `b[0,1]` (check the DPU in the
     upper row in the center).
 
-![](systolic-4.png)
+![](images/systolic-4.png)
 
 **Figure 2.3.4:** The data continue to flow horizontally and vertically.
 Each DPU continues to process the data it gets as input. Note how each
 DPU is doing exactly the same task. There is no access to any memory
 to check what tasks need to be done.
 
-![](systolic-5.png)
+![](images/systolic-5.png)
 
 **Figure 2.3.5:** The data continue to flow horizontally and vertically.
 When the input stops, for example the upper left DPU has no input anymore,
 it does not do anything else. It just stores the result. The content of that
 DPU is the first element of the resulting matrix.
 
-![](systolic-6.png)
+![](images/systolic-6.png)
 
 **Figure 2.3.6:** The data continue to flow horizontally and vertically.
 
-![](systolic-7.png)
+![](images/systolic-7.png)
 
 **Figure 2.3.7:** The data continue to flow horizontally and vertically.
 
-![](systolic-8.png)
+![](images/systolic-8.png)
 
 **Figure 2.3.8:** The data continue to flow horizontally and vertically.
 
-![](systolic-9.png)
+![](images/systolic-9.png)
 
 **Figure 2.3.9:** Now the matrix multiplication is finished and we have our
 result.

@@ -11,7 +11,7 @@ writing them back to memory and finally adding up all the multiplied values [1].
 A basic overview of how this may work can be understood with the
 [Von Neumann architecture]((https://en.wikipedia.org/wiki/Von_Neumann_architecture)) (depicted in the Figure below)
 
-![Von_Neumann_Architecture](Von_Neumann_Architecture.png)
+![Von_Neumann_Architecture](images/Von_Neumann_Architecture.png)
 
 **Figure 2.1.1**: the Von Neumann architecture (Source: [Wikipedia](https://en.wikipedia.org/wiki/Von_Neumann_architecture))
 
