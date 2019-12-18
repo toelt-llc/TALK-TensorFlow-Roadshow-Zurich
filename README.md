@@ -35,7 +35,7 @@ In each folder you will find a README.md with a table of content and instruction
 
 ### Chapter 3 - Optimization of models
 
-[3.1  Quantization]()
+[3.1  Quantization](3-1-optimization.md)
 
 ### Chapter 4 - TensorFlow Lite
 
