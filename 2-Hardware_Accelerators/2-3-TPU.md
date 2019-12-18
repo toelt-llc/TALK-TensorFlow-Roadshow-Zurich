@@ -1,4 +1,4 @@
-# [TPU](https://en.wikipedia.org/wiki/Tensor_processing_unit)
+# How a [Tensor Processing Unit (TPU)](https://en.wikipedia.org/wiki/Tensor_processing_unit) is working - some notes
 
 ## Introduction
 

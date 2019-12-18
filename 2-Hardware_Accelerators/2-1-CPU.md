@@ -1,4 +1,4 @@
-# How a [CPU](https://en.wikipedia.org/wiki/Central_processing_unit) is working - some notes
+# How a [Central Processing Unit (CPU)](https://en.wikipedia.org/wiki/Central_processing_unit) is working - some notes
 
 In this and the next sections we will not describe how a [CPU](https://en.wikipedia.org/wiki/Central_processing_unit) is working,
 that would be way too complicated. But I would like to highlight a few
