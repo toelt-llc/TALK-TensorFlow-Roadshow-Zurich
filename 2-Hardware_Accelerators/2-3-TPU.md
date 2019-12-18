@@ -9,7 +9,7 @@ Let's consider  two matrices that we want to multiply `A` and `B`, each
 
 Note that there is no exchange of data between the DPUs and RAM. everything,
 including data exchange, happens between the DPUs. In the following series
-of Figures you can see how each DPUs multiply and then add the results until
+of Figures [1] you can see how each DPUs multiply and then add the results until
 we have performed a complete matrix multiplication.
 
 ![](systolic-1.png)
@@ -59,3 +59,6 @@ DPU is the first element of the resulting matrix.
 
 **Figure 2.3.9:** Now the matrix multiplication is finished and we have our
 result.
+
+[1] From: [http://www.cs.hmc.edu/courses/2001/spring/cs156](http://www.cs.hmc.edu/courses/2001/spring/cs156), Last accessed 18th
+December 2019 11:03 AM
