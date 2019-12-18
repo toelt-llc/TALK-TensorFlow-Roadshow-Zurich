@@ -37,5 +37,5 @@ that the device is normally quite safe from external attacks.
 So to do edge computing we need two main components:
 - A device that does not require so much energy and that is able to
 run machine learning models
-- Software that can br run on the device and that is able to run
+- Software that can be run on the device and that is able to run
 machine learning models.
