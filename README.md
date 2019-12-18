@@ -39,20 +39,20 @@ In each folder you will find a README.md with a table of content and instruction
 
 ### Chapter 4 - TensorFlow Lite
 
-[4.1 Introduction]()
+[4.1 Introduction](4-1-Introduction.md)
 
-[4.2  Optimization Techniques in TensorFlow Lite]()
+[4.2  Optimization Techniques in TensorFlow Lite](4-2-Optimization-in-TFLite.md)
 
-[4.3  Saving and converting a model]()
+[4.3  Saving and converting a model](4-3-saving-converting-models.md)
 
-[4.4  TF-Lite end to end example]()
+[4.4  TF-Lite end to end example](4-4-TFLite-end-to-end-example.md)
 
-[4.5  Post-training quantization]()
+[4.5  Post-training quantization](4-5-post-training-optimization.md)
 
-[4.6  Conversion with unsupported operations]()
+[4.6  Conversion with unsupported operations](4-6-conversion-with-unsupported-operations.md)
 
-[4.7  Optimization paths]()
+[4.7  Optimization paths](4-7-optimization-paths.md)
 
-[4.8  Running models]()
+[4.8  Running models](4-8-running-models.md)
 
-[4.9  Transfer Learning]()
+[4.9  Transfer Learning](4-9-transfer-learning.md)
