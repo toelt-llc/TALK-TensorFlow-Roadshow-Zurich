@@ -7,3 +7,5 @@
 [2.2 How a Graphics Processing Unit (GPU) is working - some notes](2-2-GPU.md)
 
 [2.3 How a Tensor Processing Unit (TPU) is working - some notes](2-3-TPU.md)
+
+[ (Up) Table of Contents](../README.md)
