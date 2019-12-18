@@ -1,5 +1,28 @@
-# TPU
-## Systolic architecture
+# [TPU](https://en.wikipedia.org/wiki/Tensor_processing_unit)
+
+## Introduction
+
+The TPU tries to solve the limitations of the [CPU](https://en.wikipedia.org/wiki/Central_processing_unit)'s and [GPU](https://en.wikipedia.org/wiki/Graphics_processing_units)'s' by
+creating DPUs (**D**ata **P**rocessing **U**nits) that performs
+one single task (and one only) and that exchange data between themselves
+without the need of accessing the memory.
+
+A [TPU](https://en.wikipedia.org/wiki/Tensor_processing_unit) operates very differently than a [GPU](https://en.wikipedia.org/wiki/Graphics_processing_units) or [CPU](https://en.wikipedia.org/wiki/Central_processing_unit). Its [ALU](https://en.wikipedia.org/wiki/Arithmetic_logic_unit)’s are directly connected to each other without using the memory. They can directly give pass information which will drastically decrease latency [2].
+
+Let's consider the example of multipyling two matrices. All matrix elements
+ are loaded into the [ALU](https://en.wikipedia.org/wiki/Arithmetic_logic_unit)'s. All the matrix elements does not get inserted into the [ALU](https://en.wikipedia.org/wiki/Arithmetic_logic_unit)’s at the same time but rather in a step-by-step basis from left to right and
+ from top to bottom (a concrete example is below). This is all done with the methodology called [**systolic array**](https://en.wikipedia.org/wiki/Systolic_array) (see more info below).
+
+## Systolic array
+
+In the most basic form a [systolic array](https://en.wikipedia.org/wiki/Systolic_array) is (Source: [Wikipeda](https://en.wikipedia.org/wiki/Systolic_array))
+
+> In parallel computer architectures, a systolic array is a homogeneous network of tightly coupled data processing units (DPUs) called cells or nodes. Each node or DPU independently computes a partial result as a function of the data received from its upstream neighbors, stores the result within itself and passes it downstream.
+
+The main advantage is that the DPUs stores all the values without need to access
+external buses or memory as in the case of a [CPU](https://en.wikipedia.org/wiki/Central_processing_unit) with a [Von Neumann architecture]((https://en.wikipedia.org/wiki/Von_Neumann_architecture). Such an array of DPUs is very very good at
+one task and one only. That is at the same time its advantage and its disadvantage.
+
 
 ### Matrix multplication in systolic architecture - an example
 
@@ -62,3 +85,5 @@ result.
 
 [1] From: [http://www.cs.hmc.edu/courses/2001/spring/cs156](http://www.cs.hmc.edu/courses/2001/spring/cs156), Last accessed 18th
 December 2019 11:03 AM
+
+[2] https://blog.ml6.eu/googles-edge-tpu-what-how-why-945b32413cde
