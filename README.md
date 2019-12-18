@@ -21,3 +21,38 @@ In each folder you will find a README.md with a table of content and instruction
 [1.1 Introduction](1-Introduction/1-1-Introduction.md)
 
 [1.2 Setup of Coral Device on MAC OS Catalina](1-Introduction/1-2-Setup-of-Coral-Catalina.md)
+
+[1.3 PLACEHOLDER Raspberry Pi]()
+
+### Chapter 2 - Hardware Accelerators
+
+
+[2.1 How a CPU works: a very high level overview]()
+
+[2.2  How a GPU works: a very high level overview]()
+
+[2.3 How a TPU works: a very high level overview](2-Hardware_Accelerators/2-3-TPU.md)
+
+### Chapter 3 - Optimization of models
+
+[3.1  Quantization]()
+
+### Chapter 4 - TensorFlow Lite
+
+[4.1 Introduction]()
+
+[4.2  Optimization Techniques in TensorFlow Lite]()
+
+[4.3  Saving and converting a model]()
+
+[4.4  TF-Lite end to end example]()
+
+[4.5  Post-training quantization]()
+
+[4.6  Conversion with unsupported operations]()
+
+[4.7  Optimization paths]()
+
+[4.8  Running models]()
+
+[4.9  Transfer Learning]()
