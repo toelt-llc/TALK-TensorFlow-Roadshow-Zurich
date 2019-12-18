@@ -10,8 +10,15 @@
 
 This repository contains material, notebooks, scripts that will eventually be a complete course on Edge Computing and TensorFlow Lite.
 
+Note that this repository will use relative linking. That means that
+all the documentations (markdown files) can be accessed directly
+from your laptop without the need of having access to internet
+to get files from GitHub, once you have cloned the repository
+on your machine. Of course it can be completely accessed directly
+online from GitHub.
+
 The material is divided in sections, each having its own folder.
-In each folder you will find a README.md with a table of content and instructions of what you can find in the folder. Here you will find a high level table of contenst that should help you in navigating the material and finding what you need or search.
+In each folder you will find a README.md with a table of content and instructions of what you can find in the folder. Here you will find a high level table of content that should help you in navigating the material and finding what you need or search.
 
 
 ## Table of Content
