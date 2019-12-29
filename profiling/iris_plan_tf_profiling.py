@@ -5,8 +5,6 @@ import tensorflow.lite as tflite
 import time
 
 
-
-
 # Measuring timing
 
 
