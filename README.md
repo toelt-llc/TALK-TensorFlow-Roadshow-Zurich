@@ -1,4 +1,4 @@
-# Edge computing with TensorFlow
+# Repository for the TensorFlow Roadshow in Zürich - 16th Jan. 2020
 
 ![](https://img.shields.io/badge/dependencies-TensorFlow20-blue)
 ![](https://img.shields.io/badge/dependencies-Jupyter-red)
