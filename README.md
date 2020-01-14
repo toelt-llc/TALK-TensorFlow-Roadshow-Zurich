@@ -37,35 +37,18 @@ that is important and that requires more explanation I have provided
 some markdown files that can be accessed directly online with more information
 on specific technical issues.
 
-## Difficulty Tiers
+# Slides
 
-All the material (inlcuding slides) is divided in difficulties Tiers.
-At the beginning of each section, notebooks or readme file you will find
-indication of its difficulty. In this way you can skip the most
-challenging sections in case you are not experiences and want to
-concentrate on beginner material.
+Slides for this workshop can be found here
 
-Here is a short description of each difficulty tier.
+Part 1: [TensorFlow 2.0 Introduction](https://docs.google.com/presentation/d/1x5hCQOkgXsTvWOVwU6Kf3tn1RxPY14kObxz9pR7q1GQ/edit?usp=sharing)
 
-**Difficulty Tier 1**: the material is really easy and no previous
-experience is required. Typically in this tier no programming or
-mathematics is used. Concepts are explained only at a very high level.
-No hands-on sessions are necessary.
+Part 2: [A TPU primer](https://docs.google.com/presentation/d/1itxw8EGG-K0LI-jrczWfZnWcsWM2a4zBkqGukVQ5QNw/edit?usp=sharing)
 
-**Difficult Tier 2**: the material requires some experience. Basic programming
-(mostly Python) and mathematics know-how is necessary to understand and profit from the material.
-Only basic concepts are used in this tier, and mostly only simple problems
-are analyzed to keep the level friendly enough.
+Part 3: [TensorFlow Lite introduction](https://docs.google.com/presentation/d/1tyHy5kmu-f2vq4gcT-ny9eQVxk4BqL6scFRtfeFbtDw/edit?usp=sharing)
 
-**Difficulty Tier 3**: the material requires previous experience in
-both programming and machine learning. Advanced programming skills in Python
-and mathematics are necessary to completely grasp the concepts and
-use them efficiently. Material in this Tier is only used to solve
-problems that normally cannot be solved by pre-ready standard solutions.
-The problems present several challenges in parallel that needs to be
-addressed by different techniques from different fields.
 
-## Table of Content
+## Table of Content of material covered in Meetup
 
 ### Chapter 1 - Introduction and setup
 
@@ -79,27 +62,3 @@ addressed by different techniques from different fields.
 
 
 [2.1 How a TPU works: a very high level overview](2-Hardware_Accelerators/2-1-TPU.md)
-
-### Chapter 3 - Quantization of models
-
-[3.1  Quantization](3-1-quantization.md)
-
-### Chapter 4 - TensorFlow Lite
-
-[4.1 Introduction](4-1-Introduction.md)
-
-[4.2  Optimization Techniques in TensorFlow Lite](4-2-Optimization-in-TFLite.md)
-
-[4.3  Saving and converting a model](4-3-saving-converting-models.md)
-
-[4.4  TF-Lite end to end example](4-4-TFLite-end-to-end-example.md)
-
-[4.5  Post-training quantization](4-5-post-training-optimization.md)
-
-[4.6  Conversion with unsupported operations](4-6-conversion-with-unsupported-operations.md)
-
-[4.7  Optimization paths](4-7-optimization-paths.md)
-
-[4.8  Running models](4-8-running-models.md)
-
-[4.9  Transfer Learning](4-9-transfer-learning.md)

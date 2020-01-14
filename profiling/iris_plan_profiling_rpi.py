@@ -37,16 +37,6 @@ print(">>>", interpreter.get_input_details())
 # Test model on random input data.
 input_shape = input_details[0]['shape']
 
-#input_data = np.array(np.random.random_sample(input_shape), dtype=np.float32)
-#interpreter.set_tensor(input_details[0]['index'], input_data)
-
-#interpreter.invoke()
-
-# The function `get_tensor()` returns a copy of the tensor data.
-# Use `tensor()` in order to get a pointer to the tensor.
-#output_data = interpreter.get_tensor(output_details[0]['index'])
-#print(output_data)
-
 # Test Data
 input_data = np.array(test_plantfeatures, np.float32)
 input_data_0 = input_data[0].reshape(1,4)
@@ -68,13 +58,3 @@ print("TFLite time needed was ", end - start, "seconds")
 # Use `tensor()` in order to get a pointer to the tensor.
 output_data = interpreter.get_tensor(output_details[0]['index'])
 print(output_data)
-
-#model1 = tf.keras.models.load_model("iris_model.h5")
-#
-#start = time.time()
-#for i in range(ntimes):
-#    output = model1.predict(input_data_0)
-#end = time.time()
-#print("Keras time needed was ", end - start, "seconds")
-
-#print(output)

@@ -1,6 +1,6 @@
 # Setup of Google Coral Device on MAC OS Catalina
 
-This is a short blog post where I describe how to activate `ssh` and work
+This is a short text where I describe how to activate `ssh` and work
 on a Google Coral Device board from your laptop remotely if you have
 MAC OS Catalina. If you have tried to follow the instructions that you can
 find on the official website where
@@ -61,5 +61,3 @@ To do that you can do the following:
 
 You should be all set. The Coral will be reachable by ssh. Note that you will
 need to know the name of the board that you got during the installation phase.
-
-In case you have questions feel free to drop me an email.
