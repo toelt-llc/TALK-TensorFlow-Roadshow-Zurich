@@ -51,6 +51,9 @@ https://docs.google.com/presentation/d/1x5hCQOkgXsTvWOVwU6Kf3tn1RxPY14kObxz9pR7q
 
 https://docs.google.com/presentation/d/1tyHy5kmu-f2vq4gcT-ny9eQVxk4BqL6scFRtfeFbtDw/edit?usp=sharing
 
+**Author**: Fabien Tarrade @fabtar (contact@fabien-tarrade.eu) 
+
+Slides: **TensorFlow Ecosystem, Machine Learning: From Development To Production** [link](https://github.com/michelucci/TensorFlow-Roadshow-Zurich/blob/master/Meetup_Zurich-TF_ecosystem-F_Tarrade-16_01_2020.pdf)
 
 ## Table of Content of material covered in Meetup
 
